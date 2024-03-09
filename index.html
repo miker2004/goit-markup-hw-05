@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="./modal.js"></script>
 </head>
 
 <body>
@@ -56,8 +57,64 @@
 
             <div class="container">
                 <h1 class="main-txt">Effective Solutions for Your Business</h1>
-                <button type="button" class="order-button">Order Service</button>
+                <button type="submit" class="order-button">Order Service</button>
             </div>
+            
+        <div class="backdrop is-open">
+            <div class="modal">
+                <form class="modal-bg modal">
+
+                    <p class="modal-p">Leave your contacts and we will call you back</p>
+                
+                    <label for="name"> <p class="modal-second_p">Name</p>
+                        <input 
+                        class="modal-frame"
+                        name="name"
+                        type="text"
+                        />
+                    </label>
+                    <label for="modal-phone"> <p class="modal-second_p">Phone</p>
+                        <input 
+                        class="modal-frame"
+                        name="modal-phone"
+                        type="tel"
+                        />
+                    </label>
+                    <label for="modal-mail"> <p class="modal-second_p">Email</p>
+                        <input 
+                        class="modal-frame"
+                        name="modal-mail"
+                        type="mail"
+                        />
+                    </label>
+                    <label> <p class="modal-second_p">Comment</p>
+                        <textarea
+                            class="modal-txt"
+                            placeholder="Text input">
+                        </textarea>
+                    </label>
+                    <div class="modal-div">
+                        <input
+                        class="modal-checkbox"
+                        type="checkbox"
+                        required
+                        />
+                        <label>
+                            <span class="modal-privacy">
+                                I accept the terms and conditions of the
+                                <a class="modal-link" href="agree">Privacy Policy</a>
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="modal-button">
+                        <span class="modal-button_txt">
+                            Send
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
             
         </section>
          
@@ -565,7 +622,8 @@
                     <input 
                     class="sbcr-mail"
                     type="email" 
-                    name="foot-mail">
+                    name="foot-mail"
+                    placeholder="E-mail"/>
                 </label>
                 <button class="sbcr-button" type="submit">
                     <span class="sbcr-span">
