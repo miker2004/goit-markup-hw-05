@@ -591,8 +591,9 @@
             <form>
                 <div class="modal-form_div">
                     <label for="user-name" class="modal-second_p">Name</label>
-                        <div class="modal-frame">
+                        <div class="first-div">
                             <input 
+                            class="modal-frame"
                             id="user-name"
                             name="user-name"
                             type="text"
@@ -604,8 +605,9 @@
                 </div>
                 <div class="modal-form_div">
                     <label id="phone-nmbr" class="modal-second_p">Phone</label>
-                        <div class="modal-frame">
+                        <div class="first-div">
                             <input 
+                            class="modal-frame"
                             name="phone-nmbr"
                             type="tel"
                         />
@@ -616,11 +618,12 @@
                     </div>
                     <div class="modal-form_div">
                         <label id="mail-modal" class="modal-second_p">Email</label>
-                            <div class="modal-frame">
+                            <div class="first-div">
                                 <input 
-                            name="mail-modal"
-                            type="mail"
-                            />
+                                class="modal-frame"
+                                name="mail-modal"
+                                type="mail"
+                                />
                             <svg class="modal-svg" width="18" height="24">
                                 <use href="./images/icons2.svg#icon-email-black"></use>
                             </svg>
@@ -629,6 +632,7 @@
                     <div class="forth-div">
                         <label for="user-comment" class="modal-second_p"> Comment </label>
                             <textarea
+                                id="user-comment"
                                 name="user-comment"
                                 class="modal-txt"
                                 placeholder="Text input">
@@ -644,13 +648,13 @@
                     required
                     />
                     <label for="user-privacy" class="modal-privacy">
-                                I accept the terms and conditions of the
                             <span class="modal-span">
                                 <svg class="privacy-svg" width="10" height="8">
-                                    <use href="./images/icons2.svg#icon-Checkbox"></use>
+                                    <use href="./images/icons2.svg#icon-vector"></use>
                                 </svg>
-                                <a class="modal-link" href="agree">Privacy Policy</a>
                             </span>
+                            "I accept the terms and conditions of the"
+                            <a class="modal-link" href="agree">Privacy Policy</a>
                     </label>
                 </div>
                 
