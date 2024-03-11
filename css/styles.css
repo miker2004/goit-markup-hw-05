@@ -538,7 +538,7 @@ footer {
 
 .sbcr-mail {
     border: 1px solid #ffffff;
-    box-shadow: 0 4 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     border-radius: 4px;
     width: 264px;
@@ -558,7 +558,7 @@ footer {
     background-color: #4d5ae5;
     padding: 8px 24px 8px 24px;
     border-radius: 4px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     border: none;
@@ -606,6 +606,8 @@ footer {
 
 
 .backdrop {
+    visibility: visible;
+    opacity: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -619,7 +621,6 @@ footer {
 }
 
 .modal {
-    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -655,6 +656,7 @@ footer {
     fill: #ffffff;
 }
 
+.modal-close_button:hover,
 .modal-close_button:focus {
     fill: #ffffff;
 }
@@ -705,7 +707,8 @@ footer {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-frame:focus {
+.modal-frame:focus + .modal-svg,
+.modal-frame:hover + .modal-svg{
     border-color: #4D5AE5;
 }
 
@@ -796,6 +799,7 @@ footer {
 }
 
 .modal-button {
+    margin: 0 auto;
     display: block;
     min-width: 169px;
     height: 56px;
