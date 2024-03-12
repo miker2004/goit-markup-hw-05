@@ -646,15 +646,11 @@ footer {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close_button:hover {
-    background-color: #404bbf;
+.modal-close_button:hover + .close-svg,
+.modal-close_button:focus + .close-svg {
+    fill: #ffffff;
     border: none;
-    fill: #ffffff;
-}
-
-.modal-close_button:hover,
-.modal-close_button:focus {
-    fill: #ffffff;
+    background-color: #404bbf
 }
 
 .close-svg {
@@ -761,10 +757,11 @@ footer {
 
 .modal-privacy {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99; 
+    font-family: Roboto, sans-serif
 }
 
 .privacy-svg 
@@ -789,8 +786,11 @@ footer {
 
 .modal-link{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     color: #4D5AE5;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+;
 }
 
 .modal-button {
