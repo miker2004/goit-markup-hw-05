@@ -604,10 +604,12 @@ footer {
 
 
 
-
-.backdrop {
+.backdrop-is_open {
     visibility: visible;
     opacity: 1;
+}
+
+.backdrop-is_open {
     position: fixed;
     top: 0;
     left: 0;
@@ -662,6 +664,7 @@ footer {
 }
 
 .close-svg {
+    fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -707,8 +710,13 @@ footer {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-frame:focus + .modal-svg,
-.modal-frame:hover + .modal-svg{
+.modal-frame:focus,
+.modal-frame:hover {
+    border-color: #4D5AE5;
+}
+
+.modal-svg:focus,
+.modal-svg:hover {
     border-color: #4D5AE5;
 }
 
@@ -724,6 +732,7 @@ footer {
     position: relative;
 }
 
+.modal-svg:hover,
 .modal-svg:focus {
     fill: #4D5AE5;
 }
@@ -786,7 +795,7 @@ footer {
     border-radius: 2px;
 }
 
-.modal-span:checked + .modal-privacy span{
+.modal-span:checked + .modal-privacy span {
     background-color: #4d5ae5;
     border: none;
     fill: #F4F4FD;
