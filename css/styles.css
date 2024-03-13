@@ -649,6 +649,7 @@ footer {
 
 .modal-close_button:hover,
 .modal-close_button:focus {
+    fill: #ffffff;
     border: none;
     background-color: #404bbf
 }
