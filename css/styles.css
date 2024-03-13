@@ -781,8 +781,8 @@ footer {
     border-radius: 2px;
 }
 
-.input-privacy:checked + .modal-span + .modal-privacy span {
-    background-color: #4d5ae5;
+.input-privacy:checked + .modal-span {
+    background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
