@@ -643,7 +643,8 @@ footer {
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close_button:hover + .close-svg,
@@ -702,7 +703,7 @@ footer {
 
 .modal-frame:focus + .modal-svg,
 .modal-frame:hover +.modal-svg {
-    border-color: #4D5AE5;
+    border-color: 1px solid #4D5AE5;
     fill: #4D5AE5;
 }
 
@@ -766,6 +767,8 @@ footer {
 
 .privacy-svg 
 
+
+
 .modal-span {
     width: 16px;
     height: 16px;
@@ -778,7 +781,7 @@ footer {
     border-radius: 2px;
 }
 
-.modal-span:checked + .modal-privacy span {
+.input-privacy:checked + .modal-span + .modal-privacy span {
     background-color: #4d5ae5;
     border: none;
     fill: #F4F4FD;
@@ -790,7 +793,6 @@ footer {
     color: #4D5AE5;
     letter-spacing: 0.04em;
     line-height: 1.17;
-;
 }
 
 .modal-button {
