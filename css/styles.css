@@ -785,9 +785,12 @@ footer {
 }
 
 .input-privacy:checked + .modal-span {
+    fill: #F4F4FD;
+}
+
+.input-privacy:checked {
     background-color: #404bbf;
     border: none;
-    fill: #F4F4FD;
 }
 
 .modal-link{
