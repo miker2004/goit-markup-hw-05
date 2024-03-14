@@ -706,12 +706,10 @@ footer {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-frame:hover,
 .modal-frame:focus {
     border-color: #4D5AE5;
 }
 
-.modal-frame:hover + .modal-svg,
 .modal-frame:focus +.modal-svg {
     fill: #4D5AE5;
 }
@@ -751,7 +749,6 @@ footer {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-txt:hover,
 .modal-txt:focus {
     border-color: #4D5AE5;
 }
